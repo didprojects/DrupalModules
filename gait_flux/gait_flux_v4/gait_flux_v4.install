@@ -1,0 +1,86 @@
+<?php
+
+function gait_flux_v4_schema() {
+     $schema['gaitflux'] = array(
+        'description' => t('This table for external_data_test table.'),
+        'fields' => array(
+          'id' => array(
+            'description' => t('The primary identifier for gait_flux_data table.'),
+            'type' => 'serial',
+            'unsigned' => TRUE,
+            'not null' => TRUE),
+          'deviceid' => array(
+            'description' => t('The device id for gait_flux_data table.'),
+            'type' => 'serial',
+            'unsigned' => TRUE,
+            'not null' => TRUE),
+          'date' => array(
+            'description' => t('The date for gait_flux_data table.'),
+            'type' => 'varchar',
+            'mysql_type' => 'datetime',
+            'not null' => FALSE),
+          'emission' => array(
+            'description' => t('The emission for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          'below_soil_absorption' => array(
+            'description' => t('The below soil absorption for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          'absorption' => array(
+            'description' => t('The absorption for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          'amb_pressure' => array(
+            'description' => t('The amb pressure for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          'amb_temp' => array(
+            'description' => t('The amb temp for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          'co2_ppm' => array(
+            'description' => t('The co2 for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          'h2o' => array(
+            'description' => t('The h2o for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          'wind_ux' => array(
+            'description' => t('The wind ux for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          'wind_uy' => array(
+            'description' => t('The wind uy for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          'wind_uz' => array(
+            'description' => t('The wind uz for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          'co2_mgm3' => array(
+            'description' => t('The co2 for gait_flux_data table.'),
+            'type' => 'float',
+            'size' => 'normal',
+            'not null' => FALSE),
+          ),
+          'comments' => array(
+            'description' => t('The comments of this gait_flux_data, always treated a non-markup plain text.'),
+            'type' => 'text',
+            'not null' => TRUE,
+            'default' => ''),
+        'primary key' => array('id'),
+        );
+        return $schema;
+  }

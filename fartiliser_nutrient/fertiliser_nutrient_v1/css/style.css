@@ -1,0 +1,42 @@
+
+.js-form-type-textfield {
+	display: inline;
+}
+.js-form-type-select{
+	display: inline;
+}
+
+
+#upload-csv-btn{
+    background-color: rgb(0, 135, 95);
+    width: 160px;
+    height: 20px;
+    padding: 3px 3px;
+    font-size: 14px;
+    text-align: center;
+    display: inline;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+
+#download-json-fertiliser:hover, #upload-csv-btn:hover{
+    font-weight: bold;
+}
+
+#download-json-fertiliser{
+    width: 190px;
+    height: 20px;
+    padding: 0px 0px;
+    font-size: 13px;
+    text-align: center;
+    display: inline;
+    border: none;
+    cursor: pointer;
+}
+
+#edit-submit{
+    margin-right: 80px;
+}

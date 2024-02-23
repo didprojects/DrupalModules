@@ -1,0 +1,4 @@
+name: "Fertiliser Nutrient v1"
+description: "Fertiliser nutrient record (v1)"
+type: module
+core_version_requirement: ^9

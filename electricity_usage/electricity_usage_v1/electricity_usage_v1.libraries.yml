@@ -1,0 +1,11 @@
+electricity_usage_v1_js_css:
+  version: 1.0
+  css:
+    theme:
+      css/upload.css: {}
+  js:
+    js/upload.js: {}
+  dependencies:
+    - charts/global
+
+

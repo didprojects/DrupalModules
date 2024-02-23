@@ -1,0 +1,48 @@
+electricity_usage_v1.electricity:
+  path: '/electricity'
+  defaults:
+    _controller: 'Drupal\electricity_usage_v1\Controller\ElectricityUsageController::uploadFile'
+    _title: 'Electricity Usage Records'
+  requirements:
+    _permission: 'access content'
+
+electricity_usage_v1.displaygraph:
+  path: '/displaygraph'
+  defaults:
+    _controller: 'Drupal\electricity_usage_v1\Controller\DisplayGraphController::displayGraph'
+    _title: 'Electricity Usage Graph'
+  requirements:
+    _permission: 'access content'
+
+
+electricity_usage_v1.uploadpdf:
+  path: '/uploadpdf/{flag}'
+  defaults:
+    _form: 'Drupal\electricity_usage_v1\Form\UploadPDF'
+    _title: 'Upload Electricity Invoice'
+  requirements:
+    _permission: 'access content'
+
+electricity_usage_v1.downloadjson:
+  path: '/downloadjson'
+  defaults:
+    _controller: 'Drupal\electricity_usage_v1\Controller\DownloadJson::report'
+    _title: 'Download Report PDF'
+  requirements:
+    _permission: 'access content'
+
+electricity_usage_v1.edituploaddata:
+  path: '/edit-upload-data/{invid}'
+  defaults:
+    _form: 'Drupal\electricity_usage_v1\Form\EditUploadData'
+    _title: 'Edit Electricity Invoice Data'
+  requirements:
+    _permission: 'access content'
+
+electricity_usage_v1.deleteuploaddata:
+  path: '/delete-upload-data/{invid}'
+  defaults:
+    _controller: 'Drupal\electricity_usage_v1\Controller\ElectricityUsageController::deleteData'
+    _title: 'Delete Electricity Invoice'
+  requirements:
+    _permission: 'access content'

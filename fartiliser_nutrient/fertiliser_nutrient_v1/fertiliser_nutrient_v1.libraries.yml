@@ -1,0 +1,11 @@
+fertiliser_nutrient_v1_js_css:
+  version: 1.0
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/index.js: {}
+  dependencies:
+    - charts/global
+
+

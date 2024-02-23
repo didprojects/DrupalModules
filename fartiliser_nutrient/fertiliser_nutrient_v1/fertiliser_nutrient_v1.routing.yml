@@ -1,0 +1,23 @@
+fertiliser_nutrient_v1.fertiliser:
+  path: '/fertiliser'
+  defaults:
+    _controller: 'Drupal\fertiliser_nutrient_v1\Controller\FertiliserNutrientController::report'
+    _title: 'Fertiliser Nutrient'
+  requirements:
+    _permission: 'access content'
+
+fertiliser_nutrient_v1.downloadjsonfertiliser:
+  path: '/downloadjsonfertiliser'
+  defaults:
+    _controller: 'Drupal\fertiliser_nutrient_v1\Controller\DownloadJsonFertiliser::report'
+    _title: 'Fertiliser Nutrient'
+  requirements:
+    _permission: 'access content'
+
+fertiliser_nutrient_v1.uploadcsv:
+  path: '/uploadcsv'
+  defaults:
+    _form: 'Drupal\fertiliser_nutrient_v1\Form\UploadCSV'
+    _title: 'Upload CSV File'
+  requirements:
+    _permission: 'access content'

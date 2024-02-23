@@ -1,0 +1,18 @@
+gait_flux_v4.gaitflux:
+  path: '/gaitflux'
+  defaults:
+    _controller: 'Drupal\gait_flux_v4\Controller\GaitFluxController::report'
+    _title: 'GHG Flux Data from External Database'
+  requirements:
+    _permission: 'access content'
+
+gait_flux_v4.downloadjsonflux:
+  path: '/downloadjsonflux'
+  defaults:
+    _controller: 'Drupal\gait_flux_v4\Controller\DownloadJsonFlux::report'
+    _title: 'Download json file for overseer'
+  requirements:
+    _permission: 'access content'
+
+    
+    

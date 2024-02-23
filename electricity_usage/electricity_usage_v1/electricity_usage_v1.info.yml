@@ -1,0 +1,4 @@
+name: "Electricity Usage v1"
+description: "Upload PDF or image file, the module will extract text from the file by OCR API."
+type: module
+core_version_requirement: ^9

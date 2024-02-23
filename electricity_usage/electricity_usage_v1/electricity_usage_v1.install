@@ -1,0 +1,52 @@
+<?php
+
+function electricity_usage_v1_schema() {
+     $schema['electricity_usage'] = array(
+        'description' => t('This table for invoice_data table.'),
+        'fields' => array(
+          'invid' => array(
+            'description' => t('The primary identifier for invoice_data table.'),
+            'type' => 'serial',
+            'unsigned' => TRUE,
+            'not null' => TRUE),
+          'invnumber' => array(
+            'description' => t('The date of this invoice_data table.'),
+            'type' => 'varchar',
+            'length' => 25,
+            'not null' => TRUE,
+            'default' => ''),
+          'datestr' => array(
+            'description' => t('The date of this invoice_data table.'),
+            'type' => 'varchar',
+            'length' => 25,
+            'not null' => TRUE,
+            'default' => ''),
+          'quantity' => array(
+            'description' => t('The quantity of this invoice_data table.'),
+            'type' => 'varchar',
+            'length' => 25,
+            'not null' => TRUE,
+            'default' => ''),
+          'amount' => array(
+            'description' => t('The amount of this invoice_data table.'),
+            'type' => 'varchar',
+            'length' => 25,
+            'not null' => TRUE,
+            'default' => ''),
+          'total' => array(
+            'description' => t('The total of this invoice_data table.'),
+            'type' => 'varchar',
+            'length' => 25,
+            'not null' => TRUE,
+            'default' => ''),
+          ),
+          'comments' => array(
+            'description' => t('The comments of this invoice_data, always treated a non-markup plain text.'),
+            'type' => 'text',
+            'not null' => TRUE,
+            'default' => ''),
+        'primary key' => array('invid'),
+        );
+
+        return $schema;
+  }

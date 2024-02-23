@@ -1,0 +1,4 @@
+name: "GHG flux from GAIT v4"
+description: "This is GHG flux data from external database (v4)."
+type: module
+core_version_requirement: ^9
