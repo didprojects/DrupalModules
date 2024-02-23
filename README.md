@@ -5,11 +5,11 @@ The farmOS example modules are built using Drupal (CMS). Back-end programming la
 
 ## Configure Menu for Reports
 
-Install “farmOS Report” module from Administration-Extend. The farmOS main menu will appear “Reports”.
+Install "farmOS Report" module from Administration-Extend. The farmOS main menu will appear "Reports".
 
 <img src="images/reports_menu.PNG" width="250px" alt="Reports Menu">
 
-Add submenu in "Reports", go to Administration – Structure – Menu - Edit Menu, you will find the menu structure and edit it.
+Add submenu in "Reports", go to Administration - Structure - Menu - Edit Menu, you will find the menu structure and edit it.
 
 <img src="images/edit_menu.PNG" width="600px" alt="Edit Menu">
 
@@ -34,7 +34,7 @@ Then the submenu will appear. The Report menu structure and content are generate
 
 2. Install required modules: "Charts", "Highcharts", "Page popup"
 
-3. Go to Administration – Configuration – Content authoring – Charts configuration, select “Highcharts” as the Charting library.
+3. Go to Administration - Configuration - Content authoring - Charts configuration, select "Highcharts" as the Charting library.
 
 <img src="images/charts_conf.PNG" width="600px" alt="Chart Config">
 
@@ -130,5 +130,3 @@ This module established a connection with an external database and transfer its 
 This module has created a "gaitflux" table within the farmOS database, serving as the destination in Airbyte, with the external database acting as the source.
 
 The data in the table of external database currently was manually input from "gait_flux/gaitflux.csv" file.
-
-
